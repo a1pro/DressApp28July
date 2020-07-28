@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "212065522373",
+    "firebase_url": "https://dressapp-7aa1a.firebaseio.com",
+    "project_id": "dressapp-7aa1a",
+    "storage_bucket": "dressapp-7aa1a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212065522373:android:e9e7ffb61af8e3971cd6ac",
+        "android_client_info": {
+          "package_name": "com.dressapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "212065522373-mibnnvvn3gfppovst1qc2rjiir8l7vf5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dressapplication",
+            "certificate_hash": "eb8292817105d881ec583d2cc228e9ce6bdc4643"
+          }
+        },
+        {
+          "client_id": "212065522373-ks3t010lqgi52783duuejhba15f09q3m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkgtLN0O98xLTfMGIoxkeqAOjdmOLGsD0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "212065522373-ks3t010lqgi52783duuejhba15f09q3m.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "212065522373-jdupv5kudn5gg81q8htocc1ncp9h8hit.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.MeetShort"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

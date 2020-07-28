@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#FA2C2C2C</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+    </style>
+<!--    <style parent="Theme.AppCompat.Light.NoActionBar" name="AppTheme">-->
+
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+
+<!--        <item name="colorPrimary">@color/colorPrimary</item>-->
+<!--        <item name="colorPrimaryDark">#9E111111</item>-->
+<!--        <item name="colorAccent">@color/colorAccent</item>-->
+<!--        <item name="android:windowLightStatusBar">true</item>-->
+
+<!--    </style>-->
+
+    <!--    <style parent="Theme.AppCompat.Light.NoActionBar" name="AppTheme">-->
+
+        <!-- Customize your theme here. -->
+
+<!--        <item name="colorPrimary">@color/colorPrimary</item>-->
+<!--        <item name="colorPrimaryDark">#9E111111</item>-->
+<!--        <item name="colorAccent">@color/colorAccent</item>-->
+<!--        <item name="android:windowLightStatusBar">true</item>-->
+
+<!--    </style>-->
+</resources>

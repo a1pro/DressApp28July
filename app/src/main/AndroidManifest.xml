@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dressapplication">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
+    <uses-feature android:name="android.hardware.Camera" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <application
+        android:name=".MyApplication.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup">
+        <activity android:name=".activities.Preview_Video_A"></activity>
+        <activity android:name=".activities.GallerySelectedVideo_A" />
+        <activity android:name=".activities.GalleryVideosActivity" />
+        <activity android:name=".activities.MyCameraActivity" />
+        <activity android:name=".activities.SeeFullImageActivity" />
+        <activity android:name=".change.CommonWatchActivity" />
+        <activity android:name=".activities.ReportAddActvity" />
+        <activity android:name=".activities.ReportActivity" />
+        <activity android:name=".activities.InviteFriendsActivity" />
+        <activity android:name=".activities.ChangePasswordActivity" />
+        <activity android:name=".activities.PhoneManageActivity" />
+        <activity android:name=".activities.GetUsersByNameActivity" />
+        <activity android:name=".activities.PostStatusActivity" />
+        <activity android:name=".activities.VideoDescriptionActivity" />
+        <activity android:name=".activities.ChatActivity" />
+        <activity android:name=".activities.FollowersActivity" />
+        <activity android:name=".ui.camera.CaptureVideo.VideoPlayActivity" />
+        <activity android:name=".activities.Signup_chooseActivity" />
+        <activity android:name=".activities.signupActivity" />
+        <activity android:name=".activities.CameraActivity" />
+        <activity android:name=".activities.SetPasswordActivity" />
+        <activity android:name=".activities.EnterOtpActivity" />
+        <activity android:name=".activities.LoginWithPhoneActivity" />
+        <activity android:name=".activities.LoginWithEmailActivity" />
+        <activity android:name=".activities.PushNotificationActivity" />
+        <activity android:name=".activities.ManageMyAcActivity" />
+        <activity android:name=".activities.FindFriendsActivity" />
+        <activity android:name=".activities.HashTagActivity" />
+        <activity android:name=".activities.EditProfileActivity" />
+        <activity android:name=".activities.FollowingActivity" />
+        <activity android:name=".activities.PrivacyAndSettings" />
+        <activity
+            android:name=".activities.UserProfileActivity"
+            android:label="@string/title_activity_user_profile" />
+        <activity android:name=".activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.MainActivity" />
+
+        <receiver android:name=".activities.MainActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="fullSensor" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

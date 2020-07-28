@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <VideoView
+        android:id="@+id/videoview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="70dp"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/tv_likes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="398.3K"
+                android:textColor="@android:color/white"
+                android:layout_gravity="bottom"
+                android:drawableTop="@mipmap/like"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp" />
+
+            <TextView
+                android:id="@+id/tv_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="786"
+                android:textColor="@android:color/white"
+                android:layout_gravity="bottom"
+                android:gravity="right"
+                android:drawableTop="@mipmap/comment"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp" />
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/tv_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Map"
+                android:textColor="@android:color/white"
+                android:layout_gravity="bottom"
+                android:drawableTop="@mipmap/map"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/tv_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:textColor="@android:color/white"
+                android:layout_gravity="bottom"
+
+                android:drawableTop="@mipmap/share"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="25dp">
+
+        <ImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@mipmap/proffile_pic"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_gravity="right"
+            android:text="sohan_randhawa"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_gravity="right"
+            android:drawablePadding="5dp"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@mipmap/sound"
+            android:text="sound_original"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
